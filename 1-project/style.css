@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .ring{
+    animation: animate 4s linear infinite;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: -30px;
+    border: 4px solid transparent;
+    border-top: 4px solid blue;
+    border-radius: 50%
+    
+    
+    
+
+
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.container .ring::before{
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: blue;
+    box-shadow: 0 0 0 5px yellow , 0 0 0 10px rgb(47, 102, 255),
+    0 0 0 20px rgb(47, 255, 144),
+    0 0 0 20px grey,
+    0 0 0 50px yellow
+
+}
+.container .ring:nth-child(2){
+    animation: animate2 4s linear infinite;
+
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.container .ring:nth-child(3){
+    position: absolute;
+    top: -66.66px;
+
+
+}
+.container p{
+position: absolute;
+color: antiquewhite;
+font-size: 1.5rem;
+bottom: -100px;
+letter-spacing: 0.15rem;
+
+
+}
