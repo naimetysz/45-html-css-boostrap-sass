@@ -61,24 +61,67 @@ body{
 }
 .container .ring:nth-child(2){
     animation: animate2 4s linear infinite;
+    animation-delay: -1s;
+    border-top: 4px solid transparent;
+    border-left: 4px solid red;
 
 }
-@keyframes animate
+.container .ring:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top: initial;
+    bottom: 12px;
+    left: 12px;
+    top: 12px;
+    right: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgb(163, 23, 152);
+    box-shadow: 0 0 0 5px yellow , 0 0 0 10px rgb(47, 102, 255),
+    0 0 0 20px rgb(47, 255, 144),
+    0 0 0 20px grey,
+    0 0 0 50px yellow
+
+}
+@keyframes animate2
 {
     0%
     {
-        transform: rotate(0deg);
+        transform: rotate(360deg);
 
     }
     100%
     {
-        transform: rotate(360deg);
+        transform: rotate(0deg);
     }
 }
 .container .ring:nth-child(3){
+    animation: animate2 4s linear infinite;
+    animation-delay: -3s;
     position: absolute;
     top: -66.66px;
+    border-top: 4px solid transparent ;
+    border-left: 4px solid green;
 
+
+}
+.container .ring:nth-child(3)::before{
+    content: '';
+    position: absolute;
+    top: initial;
+    bottom: 12px;
+    left: 12px;
+    top: 12px;
+    right: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgb(163, 23, 152);
+    box-shadow: 0 0 0 5px yellow , 0 0 0 10px rgb(47, 102, 255),
+    0 0 0 20px rgb(47, 255, 144),
+    0 0 0 20px grey,
+    0 0 0 50px yellow
 
 }
 .container p{
