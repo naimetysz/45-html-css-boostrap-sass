@@ -8,14 +8,14 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: black;
+    background: rgba(216, 136, 136, 0.84);
 
 }
 .navigation{
     position: relative;
     width: 100px;
     height: 100px;
-    background: gray;
+    background: rgb(230, 143, 13);
     border-radius: 10px;
     cursor: pointer;
     transition: 0.7s;
@@ -38,7 +38,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: rgb(157, 12, 190);
     border-radius: 50%;
     transform: translate(calc(12px * var(--x)),calc(12px * var(--y)));
     transition: transform 0.5s,widht 0.5s ,height 0.5s, background 0.5s;
@@ -48,7 +48,7 @@ body{
 
 {   width: 45px;
     height: 45px;
-    background: gray;
+    background: rgb(210, 173, 23);
     transform: translate(calc(60px * var(--x)),calc(60px * var(--y)));
 }
 .navigation span ion-icon
@@ -64,5 +64,5 @@ body{
 .navigation.active span:hover ion-icon
 {
  color: aquamarine;
- filter: drop-shadow(0 0 2px green ) drop-shadow(0 0 5px green ) drop-shadow(0 0 15px green )  ;
+ filter: drop-shadow(0 0 2px rgb(205, 143, 11) ) drop-shadow(0 0 5px green ) drop-shadow(0 0 15px green )  ;
 }
