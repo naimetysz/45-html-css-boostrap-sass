@@ -5,7 +5,7 @@
 }
 body
 {
- background: #000 url(./img/bg.jpg);
+ background: url(./img/bg.jpg);
  background-attachment: fixed;
  background-blend-mode: hard-light;
 }
