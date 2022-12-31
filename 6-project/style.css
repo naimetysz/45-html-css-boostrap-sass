@@ -42,3 +42,23 @@ h3{
 { position: relative;
 
 }
+
+#text
+{
+    display: block;
+    color: #000;
+    font-weight: 500i;
+    padding: 5px;
+    font-style: italic;
+
+}
+#form #inputBox::before
+{
+    position: absolute;
+    content: '';
+    right: 12px;
+    top: 12px;
+    width: 12px;
+    height: 24px;
+    background: url();
+}
