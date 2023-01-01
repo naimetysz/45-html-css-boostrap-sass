@@ -52,7 +52,7 @@ h3{
     font-style: italic;
 
 }
-#form #inputBox::before
+#form.invalid #inputBox::before
 {
     position: absolute;
     content: '';
@@ -60,5 +60,7 @@ h3{
     top: 12px;
     width: 12px;
     height: 24px;
-    background: url();
+    background: url(./img/invalid.png);
+    background-size: cover;
+    z-index: 1000;
 }

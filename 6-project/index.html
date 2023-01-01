@@ -18,7 +18,7 @@
             </div>
         </form>
     </div>
-    <script type="text/javascript">
+    <script src="" type="text/javascript">
         function validation()
         {
             var form = document.getElementById("form");
@@ -38,6 +38,8 @@
 
                 from.classList.remove("valid");
                 from.classList.add("invalid");
+                text.innerHTML = "";
+                text.style.color = "#00ff00";
 
             }
         }
