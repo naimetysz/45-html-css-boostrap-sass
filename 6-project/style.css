@@ -22,6 +22,9 @@ h3{
     margin-bottom: 5px;
 
 }
+/* Bu CSS kodu, bir web sayfasındaki "h3" etiketine ait bir özellikler bütünüdür. "position: relative" özelliği, etiketin konumunun belirtilen koordinatlara göre ayarlanmasını sağlar. "font-size: 20px" özelliği, etiketin yazı boyutunu 20px olarak ayarlar. "color: #f9f9f9" özelliği, etiketin yazı rengini beyaz gibi açık bir renk olarak ayarlar. "letter-spacing: 1px" özelliği, etiketin harflerinin arasındaki boşluk miktarını 1px olarak ayarlar. "font-weight: 500" özelliği, etiketin yazı kalınlığını orta seviye olarak ayarlar. "margin-bottom: 5px" özelliği ise, etiketin altındaki boşluk miktarını 5px olarak ayarlar. */
+    
+    
 #form
 {
     position: relative;
@@ -37,6 +40,7 @@ h3{
     border-radius: 6px;
     color: #fff;
 }
+/* Bu CSS kodu, bir web sayfasındaki "form" ve "email" etiketlerine ait bir özellikler bütünüdür. Bu etiketler, bir "id" özelliğine sahiptir ve bu nedenle "#" işaretiyle özel bir şekilde adlandırılmışlardır. "width: 300px" özelliği, etiketlerin genişliğini 300px olarak ayarlar. "background: #292929" özelliği, etiketlerin arkaplan rengini siyah gibi koyu bir renk olarak ayarlar. "outline: none" özelliği, etiketlerin dış çerçevesinin görünmemesi için ayarlanır. "border: none" özelliği ise, etiketlerin çerçevesinin olmaması için ayarlanır. "padding: 10px" özelliği, etiketlerin içindeki yazının etiketlerin kenarlarına olan uzaklığını 10px olarak ayarlar. "border-radius: 6px" özelliği, etiketlerin köşelerinin yuvarlak olmasını sağlar. "color: #fff" özelliği ise, etiketlerin yazı rengini beyaz gibi açık bir renk olarak ayarlar. */
 #form .inputBox
 {
     position: relative;
@@ -61,6 +65,7 @@ h3{
     background: url(./img/invalid.png);
     background-size: cover;
     z-index: 1000;
+    /* etiketlerine ait özellikleri içerir. Bu etiketler, "id" ve "class" özelliklerine sahiptir ve bu nedenle "#" ve "." işaretleriyle özel bir şekilde adlandırılmışlardır. "position: absolute" özelliği, etiketlerin konumunun belirtilen koordinatlara göre ayarlanmasını sağlar. "content: absolute" özelliği ise, etiketlerin içeriğinin belirtilen koordinatlara göre ayarlanmasını sağlar. "right: 12px" ve "top: 12px" özellikleri, etiketlerin sağ ve üst kenarlarına olan uzaklıklarını 12px olarak ayarlar. "width: 24px" ve "height: 24px" özellikleri, etiketlerin genişlik ve yüksekliklerini 24px olarak ayarlar. "background: url(./img/invalid.png)" özelliği, etiketlerin arkaplan resimlerini belirtilen yol dan yükler. "background-size: cover" özelliği, resimlerin etiketlerin tamamını kaplamasını sağlar. "z-index: 1000" özelliği ise, etiketlerin öncelik sırasını belirtir. Eğer bu değer yüksekse, etiketler diğer elemanlardan önde görünür. */
 }
 #form.valid .inputBox::before
 {
