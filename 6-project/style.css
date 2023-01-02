@@ -9,6 +9,9 @@ body{
     align-items: center;
     min-height: 100vh;
     background: #373737;
+    /* Merhaba! Bu CSS kodu, bir web sayfasındaki "body" etiketine ait bir özellikler bütünüdür. "display: flex" özelliği, sayfanın içeriğini "flexbox" olarak gösterir. "justify-content: center" ve "align-items: center" özellikleri, içeriğin sayfanın ortasına hizalanmasını sağlar. "min-height: 100vh" özelliği, sayfanın en az 100% kadar yüksek olmasını sağlar ve "background: #373737" özelliği, sayfanın arkaplan rengini siyah gibi koyu bir renk olarak ayarlar. */
+    
+    
 }
 h3{
     position: relative;
