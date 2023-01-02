@@ -8,26 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <audio id="audio" src="./img/sound.wav" autostart="false"></audio>
-
-    </section>
-    <script src="" type="text/javascript">
-        document.addEventListener("click", function(e)
-        {
+    
+    <script type="text/javascript">
+        const workSound = new Audio(
+  "./ses/sound-2.wav"// yeni ses dosyasi olusturp konum veriyoruz
+);
+        document.addEventListener("click",function(e){
+            workSound.play();// play bir fonksiyon ses dosyasini oyntorm
             var body =document.querySelector('body');
             var bullet =document.createElement('span');
-            var x =e.offsetX;
-            var y =e.offsetY;
-            bullet.style.left = x+ 'px';
-            bullet.style.top = y+ 'px';
+            var x = e.offsetX;
+            var y = e.offsetY;
+            bullet.style.left =  x+'px';
+            bullet.style.top =  y+'px';
             body.appendChild(bullet);
-            var audio = document.getElementById('audio');
-            audio.play();
-    
-            
+
+
         })
     </script>
+    
+            
 </body>
 
 </html>
