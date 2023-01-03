@@ -22,18 +22,26 @@
         let mountain = document.getElementById("mountain");
         let road = document.getElementById("road");
         let text = document.getElementById("text");
+//    Bu kod, bir web sayfasında yer alan birkaç elementi (örneğin, "bg", "moon", "mountain", "road", ve "text") seçmek için kullanılır. Öncelikle, JavaScript dilinde "let" anahtar kelimesi, bir değişken tanımlama işlemini gösterir. Bu değişkenler, HTML sayfasındaki elementleri temsil etmek için kullanılır. Örneğin, "bg" değişkeni, HTML sayfasında "bg" ID'sine sahip bir elementi temsil eder.
 
-        window.addEventListener('scrol',function(){
-            var value = window.scrollY;
+// Sonrasında, "document.getElementById()" metodu kullanılarak bu elementler seçilir. Bu metod, belirtilen ID'ye sahip bir elementi HTML sayfasından seçer ve bu elementi bir JavaScript nesnesi olarak döndürür. Bu nesneler, daha sonra JavaScript kodunda işlem yapılması için kullanılabilir.
+  window.addEventListener('scrol',function(){
+ var value = window.scrollY;
 
-            bg.style.top = value *0.5 +'px';
+             bg.style.top = value *0.5 +'px';
             moon.style.left = -value *0.5 +'px';
             mountain.style.top = -value * 0.15 + 'px';
             road.style.top = value * 0.15 +'px';
             text.style.top = value * 1 + 'px'
         })
+//         Bu kod, web sayfasında scroll (kaydırma) olayını dinler ve bu olay gerçekleştiğinde bir işlevi çalıştırır. Öncelikle, "window.addEventListener('scroll', function() {...})" kodu, web sayfasında scroll olayını dinler ve olay gerçekleştiğinde içinde bulunan işlevi çalıştırır. Bu işlevin içinde, "value" adlı bir değişken tanımlanır ve bu değişkene "window.scrollY" değerini atanır. "window.scrollY" değeri, web sayfasının kaç piksel kaydırıldığını gösterir.
+
+// Daha sonra, "bg.style.top = value * 0.5 + 'px';" kodu çalıştırılır ve "bg" elementinin "top" stili (yukarıdan aşağıya doğru pozisyonu), "value" değişkeninin değeriyle çarpılıp 0.5 ile çarpılmış hali kadar değiştirilir. Örneğin, eğer "value" değişkeninin değeri 50 ise, "bg" elementinin "top" stili 150 piksel olarak değiştirilir.
+
+// Bu şekilde, diğer elementlerin de stil değerleri değiştirilir ve web sayfasında scroll olayı gerçekleştiğinde bu elementlerin pozisyonları değişir.
 
     </script>
+
     
 </body>
 </html>

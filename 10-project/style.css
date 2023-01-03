@@ -6,6 +6,8 @@
 body{
     background: #0a2a43;
     min-height: 1500px;
+    /* Bu kod, bir HTML veya CSS dosyasında sayfanın arka plan rengini #0a2a43 olarak ayarlamaya yarar. Ayrıca, sayfanın minimum yüksekliğini 1500 piksel olarak ayarlar. Özetle, bu kod sayfanızın arka planını mavi-yeşil tonlarında bir renkte olacak şekilde ve sayfanızın en az 1500 piksel yüksekliğinde olacağı şekilde ayarlamaya yarar. */
+
 }
 section{
     position: relative;
@@ -17,6 +19,14 @@ section{
     align-items: center;
 
 }
+/* Bu kod, bir HTML veya CSS dosyasında bir "vsection" etiketi oluşturmaya yarar. Bu etiketin özelliklerini şu şekilde ayarlar:
+
+Pozisyon: Bu etiketin içerdiği içerik, sayfanın diğer öğeleriyle nasıl ilişkilendirileceğini belirtir. "relative" değeri, bu etiketin içerdiği içeriğin sayfanın diğer öğelerine göre pozisyonlandırılacağını belirtir.
+Genişlik: Bu etiketin genişliğini %100 olarak ayarlar, yani sayfanın tam genişliğini kaplar.
+Yükseklik: Bu etiketin yüksekliğini, sayfanın yüksekliğinin %100'ü olarak ayarlar. "vh" birimini kullanır, bu da "viewport height" (görüntüleme alanı yüksekliği) anlamına gelir.
+Aşırı kaplama: Bu etiketin içerdiği içerik, sayfanın dışına taşması durumunda nasıl görüntüleneceğini belirtir. "hidden" değeri, bu etiketin içerdiği içeriklerin sayfanın dışına taştığında görüntülenmemesi anlamına gelir.
+Görüntüleme: Bu etiketin içerdiği içeriğin nasıl görüntüleneceğini belirtir. "flex" değeri, bu etiketin içerdiği içeriğin bir "flex container" (esnek konteyner) olarak görüntüleneceğini belirtir. Bu, içeriklerin sayfanın genişliğine göre otomatik olarak yeniden düzenlenebilmesini sağlar. */
+/* İçeriklerin hizalaması: Bu etiketin içerdiği içeriğin nasıl hizalandığını belirtir. "justify-content: center" değeri, içeriklerin sayfanın ortasına hizalanmasını sağlar. "align-items: center" değeri ise, içeriklerin yatay olarak ortaya hizalanmasını sağlar. */
 section::before
 {
     content: '';
@@ -27,6 +37,13 @@ section::before
     background: linear-gradient(to top ,#0a2a43, transparent);
     z-index: 10000;
 }
+/* İçerik: Bu ön öğenin içeriğini boş olarak ayarlar. Bu, ön öğenin içeriğinin hiçbir şey olmayacağı anlamına gelir.
+Pozisyon: Bu ön öğenin sayfanın diğer öğeleriyle nasıl ilişkilendirileceğini belirtir. "absolute" değeri, bu ön öğenin sayfanın diğer öğelerine göre pozisyonlandırılacağını belirtir.
+Alt kenar: Bu ön öğenin alt kenarının nerede olacağını belirtir. "bottom: 0" değeri, bu ön öğenin sayfanın altında olacağını belirtir.
+Genişlik: Bu ön öğenin genişliğini %100 olarak ayarlar, yani sayfanın tam genişliğini kaplar.
+Yükseklik: Bu ön öğenin yüksekliğini 100 piksel olarak ayarlar.
+Arka plan rengi: Bu ön öğenin arka plan rengini bir doğrusal gradyan olarak ayarlar. "linear-gradient(to top ,#0a2a43, transparent)" değeri, bu ön öğenin rengin #0a2a43 mavi-yeşil tonlarından sayfanın altına doğru geçiş yaptığını belirtir. "transparent" değeri ise, bu ön öğenin rengin sayfanın altına doğru tamamen şeffaf hale geldiğini belirtir. */
+/* Öğelerin üst üste gelme sırası: Bu ön öğenin sayfanın diğer öğeleriyle nasıl üst üste geleceğini belirtir. "z-index: 10000" değeri, bu ön öğenin diğer öğelerin üstüne en çok çıkacağını belirtir. Yüksek "z-index" değeri olan öğeler, diğer öğelerin altında görüntülenir. */
 section::after
 {
     content: '';
@@ -39,6 +56,18 @@ section::after
     z-index: 10000;
     mix-blend-mode: color;
 }
+/* İçerik: Bu son öğenin içeriğini boş olarak ayarlar. Bu, son öğenin içeriğinin hiçbir şey olmayacağı anlamına gelir.
+Pozisyon: Bu son öğenin sayfanın diğer öğeleriyle nasıl ilişkilendirileceğini belirtir. "absolute" değeri, bu son öğenin sayfanın diğer öğelerine göre pozisyonlandırılacağını belirtir.
+Üst kenar: Bu son öğenin üst kenarının nerede olacağını belirtir. "top: 0" değeri, bu son öğenin sayfanın en üstünde olacağını belirtir.
+Sol kenar: Bu son öğenin sol kenarının nerede olacağını belirtir. "left: 0" değeri, bu son öğenin sayfanın en solunda olacağını belirtir.
+Genişlik: Bu son öğenin genişliğini %100 olarak ayarlar, yani sayfanın tam genişliğini kaplar.
+Yükseklik: Bu son öğenin yüksekliğini %100 olarak ayarlar, yani sayfanın tam yüksekliğini kaplar.
+Arka plan rengi: Bu son öğenin arka plan rengini #0a2a43 olarak ayarlar, yani mavi-yeşil tonlarında bir renk.
+Öğelerin üst üste gelme sırası: Bu son öğenin sayfanın diğer öğeleriyle nasıl üst üste geleceğini belirtir. "z-index: 10000" değeri, bu son öğenin diğer öğelerin üstüne en çok çıkacağını belirtir. Yüksek "z-index" değeri olan öğeler, diğer öğelerin altında görüntülenir.
+Renk karıştırma modu: Bu son öğenin arka plan renginin sayfanın diğer öğelerinin rengiyle */
+
+
+
 section img
 {
     position: absolute;
@@ -50,6 +79,13 @@ section img
     pointer-events: none;
     
 }
+/* Pozisyon: Bu "img" etiketlerinin sayfanın diğer öğeleriyle nasıl ilişkilendirileceğini belirtir. "absolute" değeri, bu "img" etiketlerinin sayfanın diğer öğelerine göre pozisyonlandırılacağını belirtir.
+Üst kenar: Bu "img" etiketlerinin üst kenarının nerede olacağını belirtir. "top: 0" değeri, bu "img" etiketlerinin sayfanın en üstünde olacağını belirtir.
+Sol kenar: Bu "img" etiketlerinin sol kenarının nerede olacağını belirtir. "left: 0" değeri, bu "img" etiketlerinin sayfanın en solunda olacağını belirtir.
+Genişlik: Bu "img" etiketlerinin genişliğini %100 olarak ayarlar, yani sayfanın tam genişliğini kaplar.
+Yükseklik: Bu "img" etiketlerinin yüksekliğini %100 olarak ayarlar, yani sayfanın tam yüksekliğini kaplar.
+Görüntü uydurma: Bu "img" etiketlerinin nasıl uydurulacağını belirtir. "object-fit: cover" değeri, bu "img" etiketlerinin tamamen sayfanın genişliği ve yüksekliğini kaplamasını ve ölçülerini koruyarak bu genişlik ve yükseklik içine sığmasını sağlar.
+İşaretçi olayları: Bu "img" etiketlerinin nasıl tepki verileceğini belirtir. "pointer-events: none" değeri, bu "img" etiketlerine tıklanamayacağını ve hiçbir tür işaretçi olayının olmayacağını belirtir. */
 #text
 {
     position: relative;
