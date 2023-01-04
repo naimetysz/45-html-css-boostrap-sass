@@ -57,5 +57,14 @@
         
        </ul>
    </div>
+   <div class="toggle" onclick="toggleMenu()"></div>
+   <script type="text/javascript">
+       function toggleMenu(){
+           let navigation = document.querySelector('.navigation');
+           let toggle = document.querySelector('toggle')
+           navigation.classList.toggle('active');
+           toggle.classList.toggle('active');
+       }
+   </script>
 </body>
 </html>
