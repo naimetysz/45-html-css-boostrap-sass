@@ -11,6 +11,17 @@ body {
     min-height: 100vh;
     background: radial-gradient(#555,#292929);
 }
+/* Bu kod CSS (Cascading Style Sheets) dilini kullanıyor ve bir web sayfasındaki bir HTML elementinin görünümünü tanımlar.
+
+"body" seçicisi belirtilen CSS kurallarının tüm web sayfası için geçerli olacağını belirtir.
+
+"display: flex" kodu, belirtilen elementin flexbox (esnek kutu) olarak görüntülenmesini sağlar. Bu, elementleri yatay veya dikey olarak düzenlememizi veya sıralamamızı sağlar.
+
+"justify-content: center" ve "align-items: center", flexbox içindeki tüm elementlerin ortalanmasını sağlar.
+
+"min-height: 100vh" kodu, belirtilen elementin en az 100% viewport (ekran) yüksekliğinde olmasını sağlar. */
+
+/* "background: radial-gradient(#555,#292929)" kodu, arka plan renginin radyal bir gradient olarak ayarlandığını belirtir. Burada, gradient rengi #555'den #292929'a doğru geçiş yapmaktadır. */
 label{
     position: relative;
     width: 300px;
@@ -23,10 +34,38 @@ label{
     justify-content: center;
     align-items: center;
 }
+/* Bu kod CSS dilini kullanıyor ve bir web sayfasındaki bir HTML elementinin görünümünü tanımlar.
+
+"label" seçicisi belirtilen CSS kurallarının o etiketli elementi için geçerli olacağını belirtir.
+
+"position: relative" kodu, belirtilen elementin konumunun referans noktasının kendisi olmasını sağlar.
+
+"width: 300px" ve "height: 150px" kodları, belirtilen elementin genişliğini 300px ve yüksekliğini 150px olarak ayarlar.
+
+"background:#3e3e3e" kodu, belirtilen elementin arka plan rengini #3e3e3e olarak ayarlar.
+
+"box-shadow: 0 0 0 4px #303030" kodu, belirtilen elementin kutu gölgesini 0px sağa, 0px aşağıya, 0px dışarıya ve 4px genişliğinde #303030 renginde ayarlar.
+
+"border-radius: 75px" kodu, belirtilen elementin kenarlarının yarıçapını 75px olarak ayarlar. Bu kod, elementin kenarlarının yuvarlak olmasını sağlar.
+
+"cursor: pointer" kodu, belirtilen elementin üzerine geldiğinde fare imlecini işaretçi şekline dönüştürür.
+
+"display: flex" kodu, belirtilen elementin flexbox (esnek kutu) olarak görüntülenmesini sağlar. Bu, elementleri yatay veya dikey olarak düzenlememizi veya sıralamamızı sağlar.
+
+"justify-content: center" ve "align-items: center", flexbox içindeki tüm elementlerin ortalanmasını sağlar. */
+
+
+
 label input{
     appearance: none;
 
 }
+/* Bu kod CSS dilini kullanıyor ve bir web sayfasındaki bir HTML elementinin görünümünü tanımlar.
+
+"label input" seçicisi belirtilen CSS kurallarının sadece etiketi içindeki input elementi için geçerli olacağını belirtir.
+
+"appearance: none" kodu, tarayıcının input element için varsayılan stil ve biçimlendirmesini kaldırır. Bu, input elementin düz, stilsiz bir input olarak görünmesini sağlar. Bu, input elementine kendi özel stilini uygulamak istediğinde kullanışlı olabilir. */
+
 label span {
     position: absolute;
     left:0;
@@ -40,6 +79,31 @@ label span {
     transform-origin: 75px;
 
 }
+/* Bu kod CSS dilini kullanıyor ve bir web sayfasındaki bir HTML elementinin görünümünü tanımlar.
+
+"label span" seçicisi belirtilen CSS kurallarının sadece etiketi içindeki span elementi için geçerli olacağını belirtir.
+
+"position: absolute" kodu, belirtilen elementin konumunun mutlak olmasını sağlar, bu elementin en yakın konumlandırılmış ancestor elementine göre konumlandırılır ama etrafındaki diğer elementlerin düzenini etkilemez.
+konumlandırılır ama etrafındaki diğer elementlerin düzenini etkilemez.
+
+"left: 0" kodu, belirtilen elementin sol tarafını 0px olarak ayarlar.
+
+"width: 175px" ve "height: 150px" kodları, belirtilen elementin genişliğini 175px ve yüksekliğini 150px olarak ayarlar.
+
+"background: url(./Coffee_02.png)" kodu, belirtilen elementin arka planına "./Coffee_02.png" adresindeki görüntüyü atar.
+
+"background-size: auto 150px" kodu, arka plan görüntüsünün boyutunu otomatik olarak yükseklik 150px olarak ayarlar.
+
+"background-repeat: no-repeat" kodu, arka plan görüntüsünün tekrarlamasını engeller.
+
+"transition: 1.5s" kodu, belirtilen elementin geçiş süresini 1.5 saniye olarak ayarlar.
+
+"transform: rotate(-180deg)" kodu, belirtilen elementin -180 derece döndürülmüş olmasını sağlar.
+
+"transform-origin: 75px" kodu, belirtilen elementin dönüş noktasını 75px olarak ayarlar. */
+
+
+
 label input:checked ~ span
 {
     left: 150px;
@@ -49,6 +113,19 @@ label input:checked ~ span
     transform: rotate(360deg);
 
 }
+/* uBu kod CSS dilini kullanıyor ve bir web sayfasındaki bir HTML elementinin görünümünü tanımlar.
+
+"label input:checked ~ span" seçicisi, input elementinin işaretli durumda olduğu span elementi hedefler. Bu seçici işaretli olan input elementinin kardeşi olan span elementini hedefler ve aşağıdaki stil kurallarını uyglar:
+
+"left: 150px" kodu, belirtilen elementin sol tarafını 150px olarak ayarlar.
+
+"background: url(./Coffee_01.png)" kodu, belirtilen elementin arka planına "./Coffee_01.png" adresindeki görüntüyü atar.
+
+"background-size: auto 150px" kodu, arka plan görüntüsünün boyutunu otomatik olarak yükseklik 150px olarak ayarlar.
+
+"background-repeat: no-repeat" kodu, arka plan görüntüsünün tekrarlamasını engeller.
+
+"transform: rotate(360deg)" kodu, belirtilen elementin 360 derece döndürülmüş olmasını sağlar. */
 label text 
 {
     position: absolute;
@@ -59,10 +136,32 @@ label text
     transition: 1.5s;
     
 }
+/* Bu kod CSS dilini kullanıyor ve bir web sayfasındaki bir HTML elementinin görünümünü tanımlar.
+
+"label text" seçicisi belirtilen CSS kurallarının sadece etiketi içindeki text elementi için geçerli olacağını belirtir.
+
+"position: absolute" kodu, belirtilen elementin konumunun mutlak olmasını sağlar, bu elementin en yakın konumlandırılmış ancestor elementine göre konumlandırılır ama etrafındaki diğer elementlerin düzenini etkilemez.
+
+"left: -120px" kodu, belirtilen elementin sol tarafını -120px olarak ayarlar.
+
+"color: #fff" kodu, belirtilen elementin yazı rengini #fff olarak ayarlar.
+
+"font-size: 3em" kodu, belirtilen elementin yazı tipi boyutunu 3em olarak ayarlar.
+
+"filter: drop-shadow(0 0 15px #fff) drop-shadow(0 0 35px #fff)" kodu, belirtilen elementin gölge efektini 0px sağa, 0px aşağıya, 15px dışarıya ve 35px dışarıya olmak üzere #fff renginde ayarlar.
+
+"transition: 1.5s" kodu, belirtilen elementin geçiş süresini 1.5 saniye olarak ayarlar. */
+
+
+
 label input:checked ~ text{
     color: #8f8f8f;
     filter: none;
 }
+/* "filter: none" kodu, belirtilen element için uygulanan filtreleri kaldırır. Bu kod, önceki filter kurallarını iptal etmek için kullanılabilir. */
+
+
+
 label text :last-child
 {
     position: absolute;
